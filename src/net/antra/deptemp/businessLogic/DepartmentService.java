@@ -18,6 +18,7 @@ public class DepartmentService {
 		dept.setName(name);
 		em.persist(dept);
 		em.getTransaction().commit();
+		System.out.println("first log info");
 		return getDeptList();
 	}
 
